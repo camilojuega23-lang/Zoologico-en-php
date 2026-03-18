@@ -102,7 +102,7 @@ class Animal
     public function editar()
     {
         //consulta para actualizar el registro de cada animal
-        $query = "UPDATE animal SET codigo='$this->codigo', nombre='$this->nombre', especie='$this->especie', tipo='$this->tipo', peso='$this->peso', edad='$this->edad', dieta='$this->dieta', observacion='$this->observacion' WHERE id_animal='$id_animal' ";
+        $query = "UPDATE animal SET codigo='$this->codigo', nombre='$this->nombre', especie='$this->especie', tipo='$this->tipo', peso='$this->peso', edad='$this->edad', dieta='$this->dieta', observacion='$this->observacion' WHERE id_animal='$this->id_animal' ";
 
         //ejecucion de la consulta
         $this->con->consultaSimple($query);
